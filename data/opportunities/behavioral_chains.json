@@ -10,5 +10,17 @@
   {
     "chain_description": "purchase_later -> returns -> no_delay_detected",
     "conversation_count": 44
+  },
+  {
+    "chain_description": "purchase_later -> trust -> no_delay_detected",
+    "conversation_count": 25
+  },
+  {
+    "chain_description": "waiting_for_discount -> trust -> no_delay_detected",
+    "conversation_count": 22
+  },
+  {
+    "chain_description": "occasion_planning -> delivery -> no_delay_detected",
+    "conversation_count": 19
   }
 ]

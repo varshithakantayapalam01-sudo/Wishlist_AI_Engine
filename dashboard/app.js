@@ -154,32 +154,33 @@ function renderOverview(container) {
     const sum = state.data.summary;
     const opps = state.data.opportunities;
     const topSolution = state.data.solutions[0];
+    const dq = sum.data_quality;
     
     const html = `
         <div class="card" style="margin-bottom: 24px; border-left: 4px solid var(--accent); background: linear-gradient(90deg, rgba(59,130,246,0.1) 0%, rgba(30,41,59,0) 100%);">
             <div class="card-title" style="color: var(--accent); font-size: 1.2rem;">Executive Recommendation</div>
             <p style="color: #e2e8f0; line-height: 1.6; margin-bottom: 16px;">
-                <strong>The Insight:</strong> We analyzed ${state.data.feedback.length.toLocaleString()} conversations and discovered that high-intent shoppers abandon wishlists primarily due to specific uncertainties (e.g., <em>${opps[0].opportunity_name}</em>) rather than a lack of interest.<br><br>
-                <strong>The Opportunity:</strong> We recommend testing the <strong>${topSolution.solution_name}</strong>. It addresses our #1 ranked problem, requires low implementation effort (Score: ${topSolution.implementation_effort_score}/5), and is strongly supported by external behavioral evidence.
+                <strong>The Insight:</strong> We analyzed ${dq.total_records_processed.toLocaleString()} conversations and discovered that high-intent shoppers abandon wishlists primarily due to specific uncertainties (e.g., <em>${opps[0].opportunity_name}</em>) rather than a lack of interest.<br><br>
+                <strong>The Opportunity:</strong> We recommend testing the <strong>${topSolution.solution_name}</strong>. It addresses our #1 ranked problem, requires low implementation effort (Score: ${topSolution.implementation_effort_score}/5), and is strongly supported by explicit behavioral evidence.
             </p>
             <a href="#recommended" class="btn" onclick="document.querySelector('[data-page=recommended]').click()">View Experiment Design</a>
         </div>
 
         <div class="grid grid-cols-4" style="margin-bottom: 24px;">
             <div class="card">
-                <div class="card-title"><i data-lucide="message-square"></i> Clean Conversations</div>
-                <div class="kpi-value">${state.data.feedback.length.toLocaleString()}</div>
-                <div class="kpi-label">Filtered for relevance</div>
+                <div class="card-title"><i data-lucide="message-square"></i> Raw Conversations</div>
+                <div class="kpi-value">${dq.total_records_processed.toLocaleString()}</div>
+                <div class="kpi-label">Filtered for fashion relevance</div>
             </div>
             <div class="card">
-                <div class="card-title"><i data-lucide="target"></i> Opportunity Areas</div>
-                <div class="kpi-value">${opps.length}</div>
-                <div class="kpi-label">Identified problems</div>
+                <div class="card-title"><i data-lucide="shield-check"></i> High Confidence</div>
+                <div class="kpi-value">${dq.high_confidence_records.toLocaleString()}</div>
+                <div class="kpi-label">Records exceeding 65% confidence</div>
             </div>
             <div class="card">
-                <div class="card-title"><i data-lucide="users"></i> Shopper Segments</div>
-                <div class="kpi-value">${sum.shopper_segments.length}</div>
-                <div class="kpi-label">Behavioral cohorts</div>
+                <div class="card-title"><i data-lucide="target"></i> Wishlist Relevant</div>
+                <div class="kpi-value">${dq.wishlist_relevant_records.toLocaleString()}</div>
+                <div class="kpi-label">Explicit wishlist intent/behavior</div>
             </div>
             <div class="card">
                 <div class="card-title"><i data-lucide="zap"></i> Solutions Ideated</div>
@@ -188,13 +189,18 @@ function renderOverview(container) {
             </div>
         </div>
 
+        <div style="font-size:0.85rem; color:var(--text-muted); margin-bottom:12px;">
+            <i data-lucide="alert-circle" style="width:14px; height:14px; display:inline-block; vertical-align:middle; margin-right:4px;"></i>
+            <strong>Data Quality Note:</strong> Charts exclude ${dq.unclear_intent_excluded} records with unclear intent and ${dq.no_clear_barrier_excluded} records with no identifiable purchase barrier. ${dq.low_confidence_discarded} records were discarded for low confidence.
+        </div>
+
         <div class="grid grid-cols-2" style="margin-bottom: 24px;">
             <div class="card">
-                <div class="card-title">Top Wishlist Intents</div>
+                <div class="card-title">Top Wishlist Intents (Explicit & Strong Consideration Only)</div>
                 <div class="chart-container"><canvas id="intentChart"></canvas></div>
             </div>
             <div class="card">
-                <div class="card-title">Top Purchase Barriers</div>
+                <div class="card-title">Top Purchase Barriers (High Confidence Only)</div>
                 <div class="chart-container"><canvas id="barrierChart"></canvas></div>
             </div>
         </div>
@@ -519,29 +525,35 @@ function renderExperiment(container) {
 function renderEvidence(container) {
     const data = state.data.feedback;
     // Simple pagination / slice for performance
-    const displayData = data.slice(0, 100); 
+    const displayData = data.filter(r => r.classification_confidence >= 0.65).slice(0, 100); 
     
     container.innerHTML = `
         <div class="card">
             <div class="card-title">Evidence Explorer (Showing top 100 high-confidence records)</div>
             <div class="table-container" style="max-height:600px; overflow-y:auto;">
-                <table>
-                    <thead style="position:sticky; top:0; background:var(--bg-card);">
+                <table style="min-width: 1200px;">
+                    <thead style="position:sticky; top:0; background:var(--bg-card); z-index:10;">
                         <tr>
                             <th>Source</th>
+                            <th>Conf.</th>
+                            <th>Wishlist Rel.</th>
+                            <th>Explicit Signal</th>
+                            <th>Inferred Signal</th>
                             <th>Intent</th>
                             <th>Barrier</th>
-                            <th>Impact</th>
                             <th>Evidence Snippet</th>
                         </tr>
                     </thead>
                     <tbody>
                         ${displayData.map(r => `
                             <tr>
-                                <td>${r.source_url ? `<a href="${r.source_url}" target="_blank" rel="noopener noreferrer" style="color:var(--accent);text-decoration:none;">${r.source} <i data-lucide="external-link" style="width:12px;height:12px;"></i></a>` : r.source}</td>
+                                <td style="max-width:150px; overflow:hidden; text-overflow:ellipsis; white-space:nowrap;">${r.source_url ? `<a href="${r.source_url}" target="_blank" rel="noopener noreferrer" style="color:var(--accent);text-decoration:none;">${r.source} <i data-lucide="external-link" style="width:12px;height:12px;"></i></a>` : r.source}</td>
+                                <td>${(r.classification_confidence * 100).toFixed(0)}%</td>
+                                <td>${r.wishlist_relevance ? r.wishlist_relevance.replace(/_/g, ' ') : 'unknown'}</td>
+                                <td style="color:#4ade80;">${r.explicit_signal ? r.explicit_signal.replace(/_/g, ' ') : 'none'}</td>
+                                <td style="color:#94a3b8;">${r.ai_inferred_signal ? r.ai_inferred_signal.replace(/_/g, ' ') : 'none'}</td>
                                 <td>${r.wishlist_intent.replace(/_/g, ' ')}</td>
                                 <td>${r.primary_purchase_barrier.replace(/_/g, ' ')}</td>
-                                <td><span class="badge" style="background:#334155;color:white;">${r.purchase_impact.replace(/_/g, ' ')}</span></td>
                                 <td style="font-style:italic; font-size:0.85rem; color:#cbd5e1; max-width:400px;">"${r.evidence_snippet}"</td>
                             </tr>
                         `).join('')}

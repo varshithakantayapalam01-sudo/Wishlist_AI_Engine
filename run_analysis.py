@@ -56,6 +56,7 @@ def save_csv(records: List[Dict[str, Any]], filepath: str):
         
     fieldnames = [
         "record_id", "source", "source_url", "original_text", "translated_text",
+        "wishlist_relevance", "explicit_signal", "ai_inferred_signal",
         "wishlist_intent", "purchase_intent_strength", "wishlist_mode",
         "primary_purchase_barrier", "secondary_purchase_barriers",
         "remaining_uncertainty", "uncertainty_summary",

@@ -1,125 +1,93 @@
 [
   {
     "name": "delivery_confidence",
-    "supporting_conversations": 1430,
+    "supporting_conversations": 892,
     "associated_barriers": [
       [
         "delivery",
-        995
-      ],
-      [
-        "no_clear_barrier",
-        219
+        737
       ],
       [
         "trust",
-        62
+        51
+      ],
+      [
+        "returns",
+        31
       ]
     ],
     "affected_segments": [
       [
         "convenience_focused_shopper",
-        932
-      ],
-      [
-        "high_intent_decider",
-        176
+        658
       ],
       [
         "uncertain_or_mixed",
-        169
+        73
+      ],
+      [
+        "review_dependent_shopper",
+        70
       ]
     ]
   },
   {
     "name": "return_confidence",
-    "supporting_conversations": 928,
+    "supporting_conversations": 443,
     "associated_barriers": [
       [
         "returns",
-        632
-      ],
-      [
-        "no_clear_barrier",
-        125
+        326
       ],
       [
         "delivery",
-        49
+        31
+      ],
+      [
+        "trust",
+        27
       ]
     ],
     "affected_segments": [
       [
         "convenience_focused_shopper",
-        626
-      ],
-      [
-        "uncertain_or_mixed",
-        103
+        306
       ],
       [
         "high_intent_decider",
-        88
-      ]
-    ]
-  },
-  {
-    "name": "quality_confidence",
-    "supporting_conversations": 388,
-    "associated_barriers": [
-      [
-        "product_quality",
-        203
+        43
       ],
-      [
-        "no_clear_barrier",
-        83
-      ],
-      [
-        "price",
-        22
-      ]
-    ],
-    "affected_segments": [
       [
         "review_dependent_shopper",
-        238
-      ],
-      [
-        "uncertain_or_mixed",
-        52
-      ],
-      [
-        "convenience_focused_shopper",
-        30
+        34
       ]
     ]
   },
   {
     "name": "trust",
-    "supporting_conversations": 306,
+    "supporting_conversations": 212,
     "associated_barriers": [
       [
         "trust",
-        299
+        208
       ],
       [
         "brand_uncertainty",
-        3
+        2
       ],
       [
-        "product_quality",
-        2
+        "fit",
+        1
       ]
     ],
     "affected_segments": [
       [
         "review_dependent_shopper",
-        255
+        163
       ],
       [
         "uncertain_or_mixed",
-        30
+        29
       ],
       [
         "high_intent_decider",
@@ -128,86 +96,54 @@
     ]
   },
   {
-    "name": "size_guidance",
-    "supporting_conversations": 145,
+    "name": "quality_confidence",
+    "supporting_conversations": 158,
     "associated_barriers": [
       [
-        "sizing",
-        123
+        "product_quality",
+        103
       ],
-      [
-        "no_clear_barrier",
-        7
-      ],
-      [
-        "returns",
-        4
-      ]
-    ],
-    "affected_segments": [
-      [
-        "fit_sensitive_shopper",
-        117
-      ],
-      [
-        "uncertain_or_mixed",
-        14
-      ],
-      [
-        "convenience_focused_shopper",
-        6
-      ]
-    ]
-  },
-  {
-    "name": "price_confidence",
-    "supporting_conversations": 129,
-    "associated_barriers": [
       [
         "price",
-        95
-      ],
-      [
-        "waiting_for_discount",
         13
       ],
       [
-        "no_clear_barrier",
-        12
+        "social_validation",
+        11
       ]
     ],
     "affected_segments": [
       [
-        "deal_seeker",
-        95
+        "review_dependent_shopper",
+        93
       ],
       [
         "uncertain_or_mixed",
-        16
+        23
       ],
       [
-        "inspiration_browser",
-        5
+        "convenience_focused_shopper",
+        10
       ]
     ]
   },
   {
     "name": "stock_visibility",
-    "supporting_conversations": 114,
+    "supporting_conversations": 109,
     "associated_barriers": [
       [
         "stock_availability",
-        114
+        109
       ]
     ],
     "affected_segments": [
       [
         "high_intent_decider",
-        90
+        88
       ],
       [
         "uncertain_or_mixed",
-        21
+        18
       ],
       [
         "comparison_shopper",
@@ -216,18 +152,82 @@
     ]
   },
   {
+    "name": "size_guidance",
+    "supporting_conversations": 81,
+    "associated_barriers": [
+      [
+        "sizing",
+        71
+      ],
+      [
+        "stock_availability",
+        3
+      ],
+      [
+        "fit",
+        2
+      ]
+    ],
+    "affected_segments": [
+      [
+        "fit_sensitive_shopper",
+        63
+      ],
+      [
+        "uncertain_or_mixed",
+        13
+      ],
+      [
+        "high_intent_decider",
+        2
+      ]
+    ]
+  },
+  {
+    "name": "price_confidence",
+    "supporting_conversations": 73,
+    "associated_barriers": [
+      [
+        "price",
+        57
+      ],
+      [
+        "waiting_for_discount",
+        12
+      ],
+      [
+        "returns",
+        2
+      ]
+    ],
+    "affected_segments": [
+      [
+        "deal_seeker",
+        54
+      ],
+      [
+        "uncertain_or_mixed",
+        12
+      ],
+      [
+        "high_intent_decider",
+        3
+      ]
+    ]
+  },
+  {
     "name": "social_validation",
-    "supporting_conversations": 100,
+    "supporting_conversations": 67,
     "associated_barriers": [
       [
         "social_validation",
-        100
+        67
       ]
     ],
     "affected_segments": [
       [
         "social_validation_shopper",
-        84
+        54
       ],
       [
         "uncertain_or_mixed",
@@ -241,113 +241,113 @@
   },
   {
     "name": "fit_confidence",
-    "supporting_conversations": 41,
+    "supporting_conversations": 21,
     "associated_barriers": [
       [
         "fit",
-        37
-      ],
-      [
-        "trust",
-        1
+        19
       ],
       [
         "delivery",
+        1
+      ],
+      [
+        "returns",
         1
       ]
     ],
     "affected_segments": [
       [
         "fit_sensitive_shopper",
-        36
+        17
       ],
       [
         "high_intent_decider",
         2
       ],
       [
-        "review_dependent_shopper",
+        "uncertain_or_mixed",
         1
       ]
     ]
   },
   {
     "name": "review_confidence",
-    "supporting_conversations": 29,
+    "supporting_conversations": 13,
     "associated_barriers": [
       [
         "review_uncertainty",
-        6
+        5
       ],
       [
-        "no_clear_barrier",
-        6
+        "delivery",
+        3
       ],
       [
         "returns",
-        5
+        2
       ]
     ],
     "affected_segments": [
       [
         "review_dependent_shopper",
-        15
+        6
       ],
       [
         "convenience_focused_shopper",
-        7
+        5
       ],
       [
-        "uncertain_or_mixed",
-        3
+        "deal_seeker",
+        1
       ]
     ]
   },
   {
     "name": "easier_comparison",
-    "supporting_conversations": 29,
+    "supporting_conversations": 11,
     "associated_barriers": [
       [
-        "no_clear_barrier",
-        12
-      ],
-      [
         "price",
-        4
+        3
       ],
       [
         "trust",
-        3
+        2
+      ],
+      [
+        "delivery",
+        2
       ]
     ],
     "affected_segments": [
       [
-        "comparison_shopper",
-        9
+        "review_dependent_shopper",
+        3
+      ],
+      [
+        "deal_seeker",
+        2
       ],
       [
         "convenience_focused_shopper",
-        5
-      ],
-      [
-        "review_dependent_shopper",
-        4
+        2
       ]
     ]
   },
   {
     "name": "styling_guidance",
-    "supporting_conversations": 8,
+    "supporting_conversations": 4,
     "associated_barriers": [
       [
         "styling_uncertainty",
-        8
+        4
       ]
     ],
     "affected_segments": [
       [
         "occasion_shopper",
-        8
+        4
       ]
     ]
   },

@@ -15,7 +15,7 @@
     "percentage_of_dataset": 12.36,
     "main_purchase_barrier": "delivery",
     "likely_user_need": "delivery_confidence",
-    "average_confidence": 0.826,
+    "average_confidence": 0.801,
     "representative_snippets": [
       "The estimated delivery date was Dec 14 and till today which is Dec 15, the order has not been delivered yet",
       "The order came to me as cash on delivery and i returned it",
@@ -38,7 +38,7 @@
     "percentage_of_dataset": 11.79,
     "main_purchase_barrier": "no_clear_barrier",
     "likely_user_need": "return_confidence",
-    "average_confidence": 0.821,
+    "average_confidence": 0.66,
     "representative_snippets": [
       "You have to call Delivery courier for return, they know nothing about the order or product",
       "I bought an AC and there are some requirements which was not written/mentioned in their portal, I didn't even opened the box, technician asked me to return the product and within a day I raised the re",
@@ -61,7 +61,7 @@
     "percentage_of_dataset": 11.49,
     "main_purchase_barrier": "no_clear_barrier",
     "likely_user_need": "no_clear_need",
-    "average_confidence": 0.765,
+    "average_confidence": 0.639,
     "representative_snippets": [
       "They have smart customer service who is telling to place a fresh order since the sale has got over and all the prices have been rised up and they could make more profit",
       "If we reject any order during delivery there will be too many annoying calls asking the reason in busy hours",
@@ -84,7 +84,7 @@
     "percentage_of_dataset": 9.66,
     "main_purchase_barrier": "no_clear_barrier",
     "likely_user_need": "quality_confidence",
-    "average_confidence": 0.777,
+    "average_confidence": 0.572,
     "representative_snippets": [
       "The products are awesome taking the quality and prices in consideration",
       "So what my suggestion is don't go for combo products (those products will be cheap and the quality will also be low for that price)",
@@ -107,7 +107,7 @@
     "percentage_of_dataset": 8.3,
     "main_purchase_barrier": "returns",
     "likely_user_need": "return_confidence",
-    "average_confidence": 0.803,
+    "average_confidence": 0.628,
     "representative_snippets": [
       "This was the first time when I was shopping with this website and I was really very impressed by the interesting range of products that they provided so I ordered the same",
       "They delivered a completely wrong item and i requested a return on the same day",
@@ -130,7 +130,7 @@
     "percentage_of_dataset": 8.3,
     "main_purchase_barrier": "returns",
     "likely_user_need": "return_confidence",
-    "average_confidence": 0.801,
+    "average_confidence": 0.679,
     "representative_snippets": [
       "In my last two orders, they failed to update the delivery status for nearly 20 days and kept sending me \"Delivering Today\" messages every day",
       "Other shopping apps manage to process cancellations and issue refunds almost instantly—sometimes within two minutes",
@@ -153,7 +153,7 @@
     "percentage_of_dataset": 8.28,
     "main_purchase_barrier": "no_clear_barrier",
     "likely_user_need": "delivery_confidence",
-    "average_confidence": 0.791,
+    "average_confidence": 0.663,
     "representative_snippets": [
       "And after couple of days I realise that the T-Shirts are picked up for return",
       "If you are lucky then you might get refund but of less amount than you paid for it",
@@ -176,7 +176,7 @@
     "percentage_of_dataset": 8.0,
     "main_purchase_barrier": "delivery",
     "likely_user_need": "delivery_confidence",
-    "average_confidence": 0.865,
+    "average_confidence": 0.787,
     "representative_snippets": [
       "The biggest problem is that wrong information is repeatedly given by the delivery partners and there is no proper coordination",
       "I ordered five items, and the app showed they would be delivered today, but I didn't even receive a single call from the delivery agent",
@@ -199,7 +199,7 @@
     "percentage_of_dataset": 7.79,
     "main_purchase_barrier": "no_clear_barrier",
     "likely_user_need": "delivery_confidence",
-    "average_confidence": 0.78,
+    "average_confidence": 0.642,
     "representative_snippets": [
       "Please don't buy products from this app , the quality is cheap and expensive too",
       "And price is also more as compare to other online shopping comp",
@@ -222,7 +222,7 @@
     "percentage_of_dataset": 7.27,
     "main_purchase_barrier": "delivery",
     "likely_user_need": "return_confidence",
-    "average_confidence": 0.827,
+    "average_confidence": 0.706,
     "representative_snippets": [
       "myntra refund only one product price in exchange of wrong product",
       "When I requested a return, two customer care executives, Nitish and Lokesh, refused to help and insisted that the correct products had been delivered",
@@ -245,7 +245,7 @@
     "percentage_of_dataset": 3.78,
     "main_purchase_barrier": "no_clear_barrier",
     "likely_user_need": "no_clear_need",
-    "average_confidence": 0.788,
+    "average_confidence": 0.498,
     "representative_snippets": [
       "My orders have always been delivered on time, and the product quality has matched the descriptions",
       "The user interface is very smooth, delivery is always on time, and returns are completely hassle-free",
@@ -268,7 +268,7 @@
     "percentage_of_dataset": 2.98,
     "main_purchase_barrier": "trust",
     "likely_user_need": "trust",
-    "average_confidence": 0.833,
+    "average_confidence": 0.809,
     "representative_snippets": [
       "All this is fraud you don't get them they say your order is tracking and you will get soon all that is illusion i have wasted a lots of time in sharing friends ,tracking my order and calling customer ",
       "I waited for more than 2 weeks ,( even after the expected delivery date),now they are saying that the order could not be delivered",

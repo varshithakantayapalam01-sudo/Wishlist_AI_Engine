@@ -14,8 +14,15 @@ logger = logging.getLogger(__name__)
 
 class OpportunityAnalyzer:
     def __init__(self, records: List[Dict[str, Any]]):
-        self.records = records
+        # Strict confidence and relevance filtering
         self.total = len(records)
+        self.records = [
+            r for r in records 
+            if r.get("classification_confidence", 0) and float(r.get("classification_confidence", 0)) >= 0.65
+            and r.get("wishlist_relevance") in ("explicit_wishlist", "strong_purchase_consideration")
+        ]
+        logger.info(f"Filtered down to {len(self.records)} high-confidence, wishlist-relevant records for opportunity mapping (out of {self.total} total).")
+        
         self.opportunities = {}
         self.high_intent_records = self._filter_high_intent()
 

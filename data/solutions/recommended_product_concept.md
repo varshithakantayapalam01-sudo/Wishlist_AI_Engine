@@ -4,7 +4,7 @@
 **Targeting Opportunity**: Platform & Brand Trust
 
 ## Problem
-When shoppers shortlist an item, they often abandon the purchase because they cannot trust the product quality or suspect reviews are fake (supported by 420 conversations).
+When shoppers shortlist an item, they often abandon the purchase because they cannot trust the product quality or suspect reviews are fake (supported by 298 conversations).
 
 ## Target User
 Users scrolling to reviews

@@ -168,10 +168,10 @@ BARRIER_PATTERNS = {
         (r"\bshipping\b.*\b(slow|delayed|issue|expensive)\b", 2),
     ],
     "returns": [
-        (r"\breturn\b.*\b(issue|problem|difficult|rejected|denied|fail|refus|refused|process)\b", 3),
+        (r"\breturn\b.*\b(issue|problem|difficult|rejected|denied|fail|refus|refused)\b", 3),
         (r"\b(refund|replacement)\b.*\b(not|pending|delay|issue|problem|reject|denied)\b", 3),
         (r"\bno return\b", 3),
-        (r"\breturn\b.*\b(policy|process|pickup)\b.*\b(bad|poor|worst|terrible)\b", 3),
+        (r"\breturn\b.*\b(policy|process|pickup)\b.*\b(bad|poor|worst|terrible|hard|difficult)\b", 3),
         (r"\b(exchange|refund)\b.*\b(not|pending|waiting|delay)\b", 3),
     ],
     "styling_uncertainty": [
@@ -866,43 +866,101 @@ class BehavioralClassifier:
 
         return ranked[0][0]
 
+    # ── New Step: Wishlist Relevance ───────────────────────────────────────
+
+    def classify_wishlist_relevance(self, text: str, intent_strength: str, barrier: str) -> str:
+        """Classify how relevant the record is to wishlist behavior."""
+        explicit_patterns = [
+            r"\bwishlist\b", r"\bsaved item", r"\bsaved for later", 
+            r"\bshortlisted\b", r"\bfavorites\b", r"\bwaiting to buy\b", 
+            r"\btracking a saved", r"\bsaved it\b", r"\bbookmarked\b"
+        ]
+        
+        # Check for explicit wishlist statements
+        for pat in explicit_patterns:
+            if re.search(pat, text, re.IGNORECASE):
+                return "explicit_wishlist"
+                
+        # If not explicit, check for strong purchase consideration (e.g. they want it but hit a barrier)
+        if intent_strength in ("high", "medium") and barrier != "no_clear_barrier":
+            return "strong_purchase_consideration"
+            
+        if intent_strength in ("high", "medium"):
+            return "indirect_relevance"
+            
+        return "general_shopping_feedback"
+
+    # ── New Step: Explicit vs AI Inferred ──────────────────────────────────
+
+    def extract_signal_types(self, text: str, primary_barrier: str, intent: str) -> Tuple[str, str]:
+        """Determine what was explicitly stated vs what AI inferred."""
+        explicit = []
+        inferred = []
+        
+        # Check explicit intent
+        if re.search(r"\b(buy|purchase|order|saved|wishlist)\b", text, re.IGNORECASE):
+            explicit.append(intent)
+        else:
+            if intent != "unclear":
+                inferred.append(intent)
+                
+        # Check explicit barrier
+        barrier_keywords = {
+            "price": r"\b(price|expensive|cost)\b",
+            "fit": r"\b(fit|tight|loose)\b",
+            "sizing": r"\b(size|chart)\b",
+            "product_quality": r"\b(quality|material|fabric)\b",
+            "returns": r"\b(return|refund)\b",
+            "delivery": r"\b(delivery|shipping)\b",
+        }
+        
+        if primary_barrier != "no_clear_barrier":
+            pat = barrier_keywords.get(primary_barrier, r"\b" + primary_barrier.replace("_", " ") + r"\b")
+            if re.search(pat, text, re.IGNORECASE):
+                explicit.append(primary_barrier)
+            else:
+                inferred.append(primary_barrier)
+                
+        explicit_str = ", ".join(explicit) if explicit else "none_explicit"
+        inferred_str = ", ".join(inferred) if inferred else "none_inferred"
+        
+        return explicit_str, inferred_str
+
     # ── Step 12: Confidence Scoring ────────────────────────────────────────
 
     def calculate_confidence(self, text: str, barrier: str,
-                              intent: str, uncertainties: List[str]) -> float:
-        """Calculate classification confidence based on signal strength."""
-        confidence = 0.50  # Base
+                              intent: str, uncertainties: List[str], relevance: str) -> float:
+        """Calculate classification confidence strictly based on explicit signals."""
+        confidence = 0.40  # Base for just having text
+        
+        # Strong explicit wishlist relevancy massively boosts confidence
+        if relevance == "explicit_wishlist":
+            confidence += 0.30
+        elif relevance == "strong_purchase_consideration":
+            confidence += 0.20
 
-        # Text length bonus — longer texts have more signals
-        length = len(text)
-        if length > 300:
+        # Clear barrier matched with high weight
+        if barrier not in ("no_clear_barrier", "other", "unclear"):
             confidence += 0.15
-        elif length > 150:
-            confidence += 0.10
-        elif length > 80:
-            confidence += 0.05
 
-        # Clear barrier found
-        if barrier != "no_clear_barrier" and barrier != "other":
-            confidence += 0.10
-
-        # Clear intent found
+        # Clear intent matched
         if intent != "unclear":
-            confidence += 0.08
+            confidence += 0.10
 
-        # Uncertainty identified
-        if uncertainties and "no_clear_uncertainty" not in uncertainties:
-            confidence += 0.07
-
-        # Multiple keywords matched (strong signal)
+        # Multiple strict keywords matched
         keyword_count = len(re.findall(
             r"\b(size|fit|quality|price|return|refund|delivery|order|buy|review|"
             r"discount|exchange|expensive|cheap|wrong|issue|problem|trust|compare)\b",
             text, re.IGNORECASE
         ))
-        confidence += min(keyword_count * 0.02, 0.10)
-
-        return round(min(confidence, 1.0), 4)
+        confidence += min(keyword_count * 0.05, 0.25)
+        
+        # Penalize if it's general feedback and we're trying to extract wishlist insights
+        if relevance == "general_shopping_feedback":
+            confidence -= 0.20
+            
+        # Ensure it stays within bounds
+        return round(max(0.0, min(confidence, 1.0)), 4)
 
     # ── Main Classification Entry Point ────────────────────────────────────
 
@@ -948,12 +1006,18 @@ class BehavioralClassifier:
             intent, primary_barrier, uncertainties, mode, research
         )
 
+        # New Step: Wishlist Relevance
+        relevance = self.classify_wishlist_relevance(text, strength, primary_barrier)
+        
+        # New Step: Explicit vs Inferred Signals
+        explicit_sig, inferred_sig = self.extract_signal_types(text, primary_barrier, intent)
+
         # Step 11: Evidence
         evidence = self._extract_evidence(text)
 
         # Step 12: Confidence
         confidence = self.calculate_confidence(
-            text, primary_barrier, intent, uncertainties
+            text, primary_barrier, intent, uncertainties, relevance
         )
 
         return {
@@ -962,6 +1026,9 @@ class BehavioralClassifier:
             "source_url": record.get("source_url", ""),
             "original_text": record.get("comment_text", ""),
             "translated_text": record.get("translated_text", ""),
+            "wishlist_relevance": relevance,
+            "explicit_signal": explicit_sig,
+            "ai_inferred_signal": inferred_sig,
             "wishlist_intent": intent,
             "purchase_intent_strength": strength,
             "wishlist_mode": mode,
@@ -991,6 +1058,9 @@ class BehavioralClassifier:
             "source_url": record.get("source_url", ""),
             "original_text": "",
             "translated_text": "",
+            "wishlist_relevance": "irrelevant_to_wishlist",
+            "explicit_signal": "none_explicit",
+            "ai_inferred_signal": "none_inferred",
             "wishlist_intent": "unclear",
             "purchase_intent_strength": "unclear",
             "wishlist_mode": "unclear",
