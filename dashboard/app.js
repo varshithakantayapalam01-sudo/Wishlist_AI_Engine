@@ -153,8 +153,18 @@ function handleRoute() {
 function renderOverview(container) {
     const sum = state.data.summary;
     const opps = state.data.opportunities;
+    const topSolution = state.data.solutions[0];
     
     const html = `
+        <div class="card" style="margin-bottom: 24px; border-left: 4px solid var(--accent); background: linear-gradient(90deg, rgba(59,130,246,0.1) 0%, rgba(30,41,59,0) 100%);">
+            <div class="card-title" style="color: var(--accent); font-size: 1.2rem;">Executive Recommendation</div>
+            <p style="color: #e2e8f0; line-height: 1.6; margin-bottom: 16px;">
+                <strong>The Insight:</strong> We analyzed ${state.data.feedback.length.toLocaleString()} conversations and discovered that high-intent shoppers abandon wishlists primarily due to specific uncertainties (e.g., <em>${opps[0].opportunity_name}</em>) rather than a lack of interest.<br><br>
+                <strong>The Opportunity:</strong> We recommend testing the <strong>${topSolution.solution_name}</strong>. It addresses our #1 ranked problem, requires low implementation effort (Score: ${topSolution.implementation_effort_score}/5), and is strongly supported by external behavioral evidence.
+            </p>
+            <a href="#recommended" class="btn" onclick="document.querySelector('[data-page=recommended]').click()">View Experiment Design</a>
+        </div>
+
         <div class="grid grid-cols-4" style="margin-bottom: 24px;">
             <div class="card">
                 <div class="card-title"><i data-lucide="message-square"></i> Clean Conversations</div>
@@ -528,7 +538,7 @@ function renderEvidence(container) {
                     <tbody>
                         ${displayData.map(r => `
                             <tr>
-                                <td>${r.source}</td>
+                                <td>${r.source_url ? `<a href="${r.source_url}" target="_blank" rel="noopener noreferrer" style="color:var(--accent);text-decoration:none;">${r.source} <i data-lucide="external-link" style="width:12px;height:12px;"></i></a>` : r.source}</td>
                                 <td>${r.wishlist_intent.replace(/_/g, ' ')}</td>
                                 <td>${r.primary_purchase_barrier.replace(/_/g, ' ')}</td>
                                 <td><span class="badge" style="background:#334155;color:white;">${r.purchase_impact.replace(/_/g, ' ')}</span></td>
