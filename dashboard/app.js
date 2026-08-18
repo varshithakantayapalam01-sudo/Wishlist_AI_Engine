@@ -58,12 +58,13 @@ async function init() {
 
 async function loadAllData() {
     // We fetch data from the local /data folder
+    const ts = new Date().getTime();
     const [summaryRes, oppsText, solutionsText, experimentsRes, feedbackText] = await Promise.all([
-        fetch('data/behavioral_analysis_summary.json'),
-        fetch('data/opportunities/opportunity_ranking.csv').then(r => r.text()),
-        fetch('data/solutions/solution_prioritization.csv').then(r => r.text()),
-        fetch('data/solutions/experiment_plans.json'),
-        fetch('data/classified_fashion_feedback.csv').then(r => r.text())
+        fetch('data/behavioral_analysis_summary.json?v=' + ts),
+        fetch('data/opportunities/opportunity_ranking.csv?v=' + ts).then(r => r.text()),
+        fetch('data/solutions/solution_prioritization.csv?v=' + ts).then(r => r.text()),
+        fetch('data/solutions/experiment_plans.json?v=' + ts),
+        fetch('data/classified_fashion_feedback.csv?v=' + ts).then(r => r.text())
     ]);
 
     state.data.summary = await summaryRes.json();
