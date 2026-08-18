@@ -3,11 +3,11 @@
 ## Summary Metrics
 
 - **Total records classified**: 4927
-- **High confidence (>= 0.75)**: 73.84%
-- **Low confidence (< 0.60)**: 0.55%
-- **With clear purchase barrier**: 65.21%
+- **High confidence (>= 0.75)**: 43.92%
+- **Low confidence (< 0.60)**: 43.84%
+- **With clear purchase barrier**: 63.91%
 - **With clear wishlist intent**: 17.43%
-- **With clear user need**: 74.08%
+- **With clear user need**: 73.39%
 - **Logical contradictions found**: 1
 
 ## Known Limitations
