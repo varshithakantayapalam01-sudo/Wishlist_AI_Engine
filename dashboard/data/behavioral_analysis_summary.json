@@ -1,0 +1,902 @@
+{
+  "wishlist_intent": [
+    {
+      "category": "unclear",
+      "count": 4068,
+      "percentage": 82.57,
+      "confidence_weighted_percentage": 65.32
+    },
+    {
+      "category": "purchase_later",
+      "count": 276,
+      "percentage": 5.6,
+      "confidence_weighted_percentage": 5.01
+    },
+    {
+      "category": "waiting_for_stock",
+      "count": 157,
+      "percentage": 3.19,
+      "confidence_weighted_percentage": 2.84
+    },
+    {
+      "category": "waiting_for_discount",
+      "count": 141,
+      "percentage": 2.86,
+      "confidence_weighted_percentage": 2.42
+    },
+    {
+      "category": "comparison_shortlist",
+      "count": 117,
+      "percentage": 2.37,
+      "confidence_weighted_percentage": 2.02
+    },
+    {
+      "category": "occasion_planning",
+      "count": 72,
+      "percentage": 1.46,
+      "confidence_weighted_percentage": 1.24
+    },
+    {
+      "category": "inspiration_or_discovery",
+      "count": 38,
+      "percentage": 0.77,
+      "confidence_weighted_percentage": 0.63
+    },
+    {
+      "category": "gift_or_future_need",
+      "count": 37,
+      "percentage": 0.75,
+      "confidence_weighted_percentage": 0.65
+    },
+    {
+      "category": "waiting_for_more_information",
+      "count": 17,
+      "percentage": 0.35,
+      "confidence_weighted_percentage": 0.32
+    },
+    {
+      "category": "bookmarking_only",
+      "count": 4,
+      "percentage": 0.08,
+      "confidence_weighted_percentage": 0.06
+    }
+  ],
+  "wishlist_mode": [
+    {
+      "category": "genuine_purchase_intent",
+      "count": 2290,
+      "percentage": 46.48,
+      "confidence_weighted_percentage": 38.12
+    },
+    {
+      "category": "likely_purchase_intent",
+      "count": 1384,
+      "percentage": 28.09,
+      "confidence_weighted_percentage": 22.58
+    },
+    {
+      "category": "unclear",
+      "count": 997,
+      "percentage": 20.24,
+      "confidence_weighted_percentage": 15.55
+    },
+    {
+      "category": "future_need",
+      "count": 197,
+      "percentage": 4.0,
+      "confidence_weighted_percentage": 3.27
+    },
+    {
+      "category": "inspiration_board",
+      "count": 44,
+      "percentage": 0.89,
+      "confidence_weighted_percentage": 0.72
+    },
+    {
+      "category": "sale_tracking",
+      "count": 9,
+      "percentage": 0.18,
+      "confidence_weighted_percentage": 0.17
+    },
+    {
+      "category": "comparison_tool",
+      "count": 5,
+      "percentage": 0.1,
+      "confidence_weighted_percentage": 0.08
+    },
+    {
+      "category": "simple_bookmark",
+      "count": 1,
+      "percentage": 0.02,
+      "confidence_weighted_percentage": 0.02
+    }
+  ],
+  "top_purchase_barriers": [
+    {
+      "barrier": "no_clear_barrier",
+      "count": 1714,
+      "percentage": 34.79,
+      "average_confidence": 0.717
+    },
+    {
+      "barrier": "delivery",
+      "count": 1070,
+      "percentage": 21.72,
+      "average_confidence": 0.858
+    },
+    {
+      "barrier": "returns",
+      "count": 721,
+      "percentage": 14.63,
+      "average_confidence": 0.85
+    },
+    {
+      "barrier": "trust",
+      "count": 412,
+      "percentage": 8.36,
+      "average_confidence": 0.84
+    },
+    {
+      "barrier": "product_quality",
+      "count": 266,
+      "percentage": 5.4,
+      "average_confidence": 0.853
+    },
+    {
+      "barrier": "sizing",
+      "count": 178,
+      "percentage": 3.61,
+      "average_confidence": 0.875
+    },
+    {
+      "barrier": "social_validation",
+      "count": 151,
+      "percentage": 3.06,
+      "average_confidence": 0.821
+    },
+    {
+      "barrier": "price",
+      "count": 144,
+      "percentage": 2.92,
+      "average_confidence": 0.843
+    },
+    {
+      "barrier": "stock_availability",
+      "count": 136,
+      "percentage": 2.76,
+      "average_confidence": 0.873
+    },
+    {
+      "barrier": "fit",
+      "count": 63,
+      "percentage": 1.28,
+      "average_confidence": 0.852
+    },
+    {
+      "barrier": "payment_or_checkout",
+      "count": 28,
+      "percentage": 0.57,
+      "average_confidence": 0.81
+    },
+    {
+      "barrier": "waiting_for_discount",
+      "count": 20,
+      "percentage": 0.41,
+      "average_confidence": 0.87
+    },
+    {
+      "barrier": "styling_uncertainty",
+      "count": 9,
+      "percentage": 0.18,
+      "average_confidence": 0.808
+    },
+    {
+      "barrier": "review_uncertainty",
+      "count": 7,
+      "percentage": 0.14,
+      "average_confidence": 0.897
+    },
+    {
+      "barrier": "brand_uncertainty",
+      "count": 3,
+      "percentage": 0.06,
+      "average_confidence": 0.873
+    },
+    {
+      "barrier": "insufficient_information",
+      "count": 2,
+      "percentage": 0.04,
+      "average_confidence": 0.83
+    },
+    {
+      "barrier": "occasion_suitability",
+      "count": 1,
+      "percentage": 0.02,
+      "average_confidence": 0.9
+    },
+    {
+      "barrier": "product_comparison",
+      "count": 1,
+      "percentage": 0.02,
+      "average_confidence": 0.9
+    },
+    {
+      "barrier": "too_many_choices",
+      "count": 1,
+      "percentage": 0.02,
+      "average_confidence": 0.79
+    }
+  ],
+  "remaining_uncertainties": [
+    {
+      "uncertainty": "no_clear_uncertainty",
+      "count": 3005,
+      "percentage": 60.99
+    },
+    {
+      "uncertainty": "will_it_arrive_on_time",
+      "count": 969,
+      "percentage": 19.67
+    },
+    {
+      "uncertainty": "can_i_return_it",
+      "count": 586,
+      "percentage": 11.89
+    },
+    {
+      "uncertainty": "is_quality_good",
+      "count": 267,
+      "percentage": 5.42
+    },
+    {
+      "uncertainty": "other",
+      "count": 107,
+      "percentage": 2.17
+    },
+    {
+      "uncertainty": "will_it_be_available_later",
+      "count": 62,
+      "percentage": 1.26
+    },
+    {
+      "uncertainty": "which_size_should_i_buy",
+      "count": 49,
+      "percentage": 0.99
+    },
+    {
+      "uncertainty": "is_it_worth_the_price",
+      "count": 42,
+      "percentage": 0.85
+    },
+    {
+      "uncertainty": "which_product_is_better",
+      "count": 37,
+      "percentage": 0.75
+    },
+    {
+      "uncertainty": "can_i_trust_reviews",
+      "count": 31,
+      "percentage": 0.63
+    },
+    {
+      "uncertainty": "is_the_brand_reliable",
+      "count": 10,
+      "percentage": 0.2
+    },
+    {
+      "uncertainty": "will_it_fit",
+      "count": 8,
+      "percentage": 0.16
+    },
+    {
+      "uncertainty": "is_it_right_for_my_occasion",
+      "count": 1,
+      "percentage": 0.02
+    },
+    {
+      "uncertainty": "will_price_drop",
+      "count": 1,
+      "percentage": 0.02
+    },
+    {
+      "uncertainty": "how_should_i_style_it",
+      "count": 1,
+      "percentage": 0.02
+    }
+  ],
+  "purchase_delay_reasons": [
+    {
+      "category": "no_delay_detected",
+      "count": 4820,
+      "percentage": 97.83,
+      "confidence_weighted_percentage": 78.67
+    },
+    {
+      "category": "unsure_about_value",
+      "count": 39,
+      "percentage": 0.79,
+      "confidence_weighted_percentage": 0.65
+    },
+    {
+      "category": "waiting_for_size",
+      "count": 17,
+      "percentage": 0.35,
+      "confidence_weighted_percentage": 0.29
+    },
+    {
+      "category": "waiting_for_stock",
+      "count": 9,
+      "percentage": 0.18,
+      "confidence_weighted_percentage": 0.16
+    },
+    {
+      "category": "unsure_about_quality",
+      "count": 9,
+      "percentage": 0.18,
+      "confidence_weighted_percentage": 0.16
+    },
+    {
+      "category": "seeking_validation",
+      "count": 9,
+      "percentage": 0.18,
+      "confidence_weighted_percentage": 0.15
+    },
+    {
+      "category": "comparing_options",
+      "count": 8,
+      "percentage": 0.16,
+      "confidence_weighted_percentage": 0.14
+    },
+    {
+      "category": "waiting_for_reviews",
+      "count": 6,
+      "percentage": 0.12,
+      "confidence_weighted_percentage": 0.1
+    },
+    {
+      "category": "waiting_for_sale",
+      "count": 6,
+      "percentage": 0.12,
+      "confidence_weighted_percentage": 0.11
+    },
+    {
+      "category": "waiting_for_occasion",
+      "count": 2,
+      "percentage": 0.04,
+      "confidence_weighted_percentage": 0.04
+    },
+    {
+      "category": "waiting_for_payday",
+      "count": 1,
+      "percentage": 0.02,
+      "confidence_weighted_percentage": 0.01
+    },
+    {
+      "category": "unsure_about_fit",
+      "count": 1,
+      "percentage": 0.02,
+      "confidence_weighted_percentage": 0.02
+    }
+  ],
+  "comparison_behavior": [
+    {
+      "behavior": "no_comparison_detected",
+      "count": 4560,
+      "percentage": 92.55
+    },
+    {
+      "behavior": "comparing_marketplaces",
+      "count": 145,
+      "percentage": 2.94
+    },
+    {
+      "behavior": "comparing_prices",
+      "count": 87,
+      "percentage": 1.77
+    },
+    {
+      "behavior": "comparing_brands",
+      "count": 63,
+      "percentage": 1.28
+    },
+    {
+      "behavior": "comparing_sizes",
+      "count": 43,
+      "percentage": 0.87
+    },
+    {
+      "behavior": "comparing_multiple_products",
+      "count": 17,
+      "percentage": 0.35
+    },
+    {
+      "behavior": "comparing_reviews",
+      "count": 12,
+      "percentage": 0.24
+    }
+  ],
+  "external_research": {
+    "platforms": [
+      {
+        "platform": "none_detected",
+        "count": 4109,
+        "percentage": 83.4
+      },
+      {
+        "platform": "other_marketplace",
+        "count": 480,
+        "percentage": 9.74
+      },
+      {
+        "platform": "offline_store",
+        "count": 283,
+        "percentage": 5.74
+      },
+      {
+        "platform": "google_search",
+        "count": 47,
+        "percentage": 0.95
+      },
+      {
+        "platform": "reviews_only",
+        "count": 24,
+        "percentage": 0.49
+      },
+      {
+        "platform": "instagram",
+        "count": 14,
+        "percentage": 0.28
+      },
+      {
+        "platform": "influencer_content",
+        "count": 11,
+        "percentage": 0.22
+      },
+      {
+        "platform": "friends_or_family",
+        "count": 8,
+        "percentage": 0.16
+      },
+      {
+        "platform": "youtube",
+        "count": 2,
+        "percentage": 0.04
+      },
+      {
+        "platform": "brand_website",
+        "count": 1,
+        "percentage": 0.02
+      }
+    ],
+    "information_needs": [
+      {
+        "need": "social validation",
+        "count": 524,
+        "percentage": 10.64
+      },
+      {
+        "need": "long-term product review",
+        "count": 180,
+        "percentage": 3.65
+      },
+      {
+        "need": "size guidance",
+        "count": 121,
+        "percentage": 2.46
+      },
+      {
+        "need": "quality validation",
+        "count": 94,
+        "percentage": 1.91
+      },
+      {
+        "need": "price comparison",
+        "count": 73,
+        "percentage": 1.48
+      },
+      {
+        "need": "brand trust",
+        "count": 7,
+        "percentage": 0.14
+      },
+      {
+        "need": "real-life product appearance",
+        "count": 7,
+        "percentage": 0.14
+      },
+      {
+        "need": "fit validation",
+        "count": 4,
+        "percentage": 0.08
+      },
+      {
+        "need": "styling inspiration",
+        "count": 4,
+        "percentage": 0.08
+      }
+    ]
+  },
+  "shopper_segments": [
+    {
+      "segment": "convenience_focused_shopper",
+      "sample_size": 1613,
+      "percentage": 32.74,
+      "top_wishlist_intent": "unclear",
+      "top_purchase_barrier": "delivery",
+      "top_uncertainty": "no_clear_uncertainty",
+      "top_user_need": "delivery_confidence",
+      "typical_purchase_impact": "significantly_delays_purchase"
+    },
+    {
+      "segment": "uncertain_or_mixed",
+      "sample_size": 1022,
+      "percentage": 20.74,
+      "top_wishlist_intent": "unclear",
+      "top_purchase_barrier": "no_clear_barrier",
+      "top_uncertainty": "no_clear_uncertainty",
+      "top_user_need": "no_clear_need",
+      "typical_purchase_impact": "no_clear_impact"
+    },
+    {
+      "segment": "high_intent_decider",
+      "sample_size": 910,
+      "percentage": 18.47,
+      "top_wishlist_intent": "unclear",
+      "top_purchase_barrier": "no_clear_barrier",
+      "top_uncertainty": "no_clear_uncertainty",
+      "top_user_need": "no_clear_need",
+      "typical_purchase_impact": "no_clear_impact"
+    },
+    {
+      "segment": "review_dependent_shopper",
+      "sample_size": 659,
+      "percentage": 13.38,
+      "top_wishlist_intent": "unclear",
+      "top_purchase_barrier": "trust",
+      "top_uncertainty": "no_clear_uncertainty",
+      "top_user_need": "trust",
+      "typical_purchase_impact": "significantly_delays_purchase"
+    },
+    {
+      "segment": "fit_sensitive_shopper",
+      "sample_size": 219,
+      "percentage": 4.44,
+      "top_wishlist_intent": "unclear",
+      "top_purchase_barrier": "sizing",
+      "top_uncertainty": "no_clear_uncertainty",
+      "top_user_need": "size_guidance",
+      "typical_purchase_impact": "moderately_delays_purchase"
+    },
+    {
+      "segment": "deal_seeker",
+      "sample_size": 212,
+      "percentage": 4.3,
+      "top_wishlist_intent": "unclear",
+      "top_purchase_barrier": "price",
+      "top_uncertainty": "no_clear_uncertainty",
+      "top_user_need": "price_confidence",
+      "typical_purchase_impact": "moderately_delays_purchase"
+    },
+    {
+      "segment": "social_validation_shopper",
+      "sample_size": 133,
+      "percentage": 2.7,
+      "top_wishlist_intent": "unclear",
+      "top_purchase_barrier": "social_validation",
+      "top_uncertainty": "no_clear_uncertainty",
+      "top_user_need": "social_validation",
+      "typical_purchase_impact": "minor_friction"
+    },
+    {
+      "segment": "comparison_shopper",
+      "sample_size": 71,
+      "percentage": 1.44,
+      "top_wishlist_intent": "comparison_shortlist",
+      "top_purchase_barrier": "no_clear_barrier",
+      "top_uncertainty": "no_clear_uncertainty",
+      "top_user_need": "no_clear_need",
+      "typical_purchase_impact": "no_clear_impact"
+    },
+    {
+      "segment": "occasion_shopper",
+      "sample_size": 46,
+      "percentage": 0.93,
+      "top_wishlist_intent": "occasion_planning",
+      "top_purchase_barrier": "no_clear_barrier",
+      "top_uncertainty": "no_clear_uncertainty",
+      "top_user_need": "no_clear_need",
+      "typical_purchase_impact": "no_clear_impact"
+    },
+    {
+      "segment": "inspiration_browser",
+      "sample_size": 42,
+      "percentage": 0.85,
+      "top_wishlist_intent": "inspiration_or_discovery",
+      "top_purchase_barrier": "no_clear_barrier",
+      "top_uncertainty": "no_clear_uncertainty",
+      "top_user_need": "no_clear_need",
+      "typical_purchase_impact": "unclear"
+    }
+  ],
+  "cross_analysis": {
+    "barrier_by_segment": {
+      "inspiration_browser": {
+        "no_clear_barrier": 26,
+        "price": 6,
+        "fit": 1,
+        "product_quality": 2,
+        "social_validation": 4,
+        "sizing": 1,
+        "delivery": 1,
+        "returns": 1
+      },
+      "convenience_focused_shopper": {
+        "delivery": 959,
+        "returns": 654
+      },
+      "review_dependent_shopper": {
+        "trust": 360,
+        "no_clear_barrier": 52,
+        "product_quality": 241,
+        "review_uncertainty": 6
+      },
+      "uncertain_or_mixed": {
+        "sizing": 17,
+        "delivery": 62,
+        "no_clear_barrier": 791,
+        "social_validation": 13,
+        "product_quality": 19,
+        "returns": 27,
+        "trust": 32,
+        "price": 16,
+        "brand_uncertainty": 2,
+        "payment_or_checkout": 15,
+        "stock_availability": 26,
+        "review_uncertainty": 1,
+        "fit": 1
+      },
+      "fit_sensitive_shopper": {
+        "sizing": 158,
+        "fit": 57,
+        "no_clear_barrier": 3,
+        "stock_availability": 1
+      },
+      "deal_seeker": {
+        "price": 114,
+        "no_clear_barrier": 76,
+        "waiting_for_discount": 19,
+        "payment_or_checkout": 3
+      },
+      "high_intent_decider": {
+        "stock_availability": 106,
+        "no_clear_barrier": 661,
+        "returns": 39,
+        "delivery": 48,
+        "payment_or_checkout": 10,
+        "trust": 20,
+        "product_quality": 4,
+        "fit": 4,
+        "price": 8,
+        "social_validation": 6,
+        "waiting_for_discount": 1,
+        "insufficient_information": 1,
+        "sizing": 2
+      },
+      "social_validation_shopper": {
+        "social_validation": 128,
+        "no_clear_barrier": 5
+      },
+      "comparison_shopper": {
+        "no_clear_barrier": 64,
+        "stock_availability": 3,
+        "product_comparison": 1,
+        "brand_uncertainty": 1,
+        "too_many_choices": 1,
+        "insufficient_information": 1
+      },
+      "occasion_shopper": {
+        "no_clear_barrier": 36,
+        "occasion_suitability": 1,
+        "styling_uncertainty": 9
+      }
+    },
+    "intent_by_segment": {
+      "inspiration_browser": {
+        "inspiration_or_discovery": 36,
+        "unclear": 6
+      },
+      "convenience_focused_shopper": {
+        "unclear": 1577,
+        "waiting_for_more_information": 8,
+        "waiting_for_stock": 14,
+        "gift_or_future_need": 13,
+        "bookmarking_only": 1
+      },
+      "review_dependent_shopper": {
+        "unclear": 633,
+        "waiting_for_more_information": 3,
+        "waiting_for_stock": 20,
+        "gift_or_future_need": 2,
+        "waiting_for_discount": 1
+      },
+      "uncertain_or_mixed": {
+        "waiting_for_discount": 53,
+        "comparison_shortlist": 52,
+        "unclear": 801,
+        "purchase_later": 42,
+        "occasion_planning": 36,
+        "waiting_for_more_information": 4,
+        "gift_or_future_need": 12,
+        "waiting_for_stock": 17,
+        "bookmarking_only": 3,
+        "inspiration_or_discovery": 2
+      },
+      "fit_sensitive_shopper": {
+        "unclear": 209,
+        "waiting_for_discount": 1,
+        "comparison_shortlist": 1,
+        "gift_or_future_need": 3,
+        "waiting_for_stock": 5
+      },
+      "deal_seeker": {
+        "unclear": 123,
+        "waiting_for_discount": 86,
+        "gift_or_future_need": 1,
+        "waiting_for_more_information": 1,
+        "waiting_for_stock": 1
+      },
+      "high_intent_decider": {
+        "waiting_for_stock": 100,
+        "purchase_later": 234,
+        "unclear": 572,
+        "gift_or_future_need": 4
+      },
+      "social_validation_shopper": {
+        "unclear": 131,
+        "waiting_for_more_information": 1,
+        "gift_or_future_need": 1
+      },
+      "comparison_shopper": {
+        "comparison_shortlist": 63,
+        "unclear": 7,
+        "gift_or_future_need": 1
+      },
+      "occasion_shopper": {
+        "occasion_planning": 36,
+        "comparison_shortlist": 1,
+        "unclear": 9
+      }
+    },
+    "barrier_by_source": {
+      "Google Play Store": {
+        "no_clear_barrier": 1714,
+        "delivery": 1070,
+        "returns": 721,
+        "trust": 412,
+        "sizing": 178,
+        "price": 144,
+        "stock_availability": 136,
+        "social_validation": 151,
+        "product_quality": 266,
+        "fit": 63,
+        "payment_or_checkout": 28,
+        "review_uncertainty": 7,
+        "occasion_suitability": 1,
+        "brand_uncertainty": 3,
+        "waiting_for_discount": 20,
+        "styling_uncertainty": 9,
+        "insufficient_information": 2,
+        "product_comparison": 1,
+        "too_many_choices": 1
+      }
+    },
+    "impact_by_barrier": {
+      "no_clear_barrier": {
+        "unclear": 608,
+        "no_clear_impact": 1106
+      },
+      "delivery": {
+        "significantly_delays_purchase": 1060,
+        "blocks_purchase": 10
+      },
+      "returns": {
+        "significantly_delays_purchase": 717,
+        "blocks_purchase": 4
+      },
+      "trust": {
+        "blocks_purchase": 3,
+        "significantly_delays_purchase": 409
+      },
+      "sizing": {
+        "moderately_delays_purchase": 175,
+        "significantly_delays_purchase": 3
+      },
+      "price": {
+        "moderately_delays_purchase": 143,
+        "significantly_delays_purchase": 1
+      },
+      "stock_availability": {
+        "significantly_delays_purchase": 129,
+        "blocks_purchase": 7
+      },
+      "social_validation": {
+        "minor_friction": 137,
+        "moderately_delays_purchase": 14
+      },
+      "product_quality": {
+        "moderately_delays_purchase": 265,
+        "significantly_delays_purchase": 1
+      },
+      "fit": {
+        "moderately_delays_purchase": 62,
+        "significantly_delays_purchase": 1
+      },
+      "payment_or_checkout": {
+        "significantly_delays_purchase": 28
+      },
+      "review_uncertainty": {
+        "minor_friction": 5,
+        "moderately_delays_purchase": 2
+      },
+      "occasion_suitability": {
+        "minor_friction": 1
+      },
+      "brand_uncertainty": {
+        "moderately_delays_purchase": 1,
+        "minor_friction": 2
+      },
+      "waiting_for_discount": {
+        "moderately_delays_purchase": 15,
+        "significantly_delays_purchase": 5
+      },
+      "styling_uncertainty": {
+        "minor_friction": 9
+      },
+      "insufficient_information": {
+        "minor_friction": 2
+      },
+      "product_comparison": {
+        "minor_friction": 1
+      },
+      "too_many_choices": {
+        "minor_friction": 1
+      }
+    },
+    "mode_by_intent_strength": {
+      "low": {
+        "inspiration_board": 32,
+        "genuine_purchase_intent": 20,
+        "future_need": 22,
+        "likely_purchase_intent": 1
+      },
+      "high": {
+        "genuine_purchase_intent": 777,
+        "likely_purchase_intent": 58,
+        "future_need": 56,
+        "comparison_tool": 1,
+        "sale_tracking": 4,
+        "inspiration_board": 1
+      },
+      "unclear": {
+        "unclear": 997,
+        "genuine_purchase_intent": 549,
+        "likely_purchase_intent": 2,
+        "future_need": 55,
+        "inspiration_board": 5,
+        "sale_tracking": 1
+      },
+      "medium": {
+        "likely_purchase_intent": 1323,
+        "genuine_purchase_intent": 944,
+        "future_need": 61,
+        "inspiration_board": 6,
+        "sale_tracking": 4,
+        "comparison_tool": 4
+      },
+      "no_clear_purchase_intent": {
+        "future_need": 3,
+        "simple_bookmark": 1
+      }
+    }
+  }
+}

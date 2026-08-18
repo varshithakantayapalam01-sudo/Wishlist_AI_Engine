@@ -1,0 +1,10 @@
+[
+  {
+    "solution_name": "Verified Buyer Photo Highlight",
+    "hypothesis": "If we provide users scrolling to reviews with a verified buyer photo highlight, then they will provides immediate visual proof of actual product quality., because resolves the 'is quality good' uncertainty visually., resulting in an increase in 30-Day Wishlist-to-Purchase User Conversion Rate."
+  },
+  {
+    "solution_name": "AI Quality Extraction Summary",
+    "hypothesis": "If we provide users viewing items with >50 reviews with a ai quality extraction summary, then they will saves the user from reading dozens of reviews to find quality indicators., because directly answers the 'is the quality good' friction point instantly., resulting in an increase in 30-Day Wishlist-to-Purchase User Conversion Rate."
+  }
+]

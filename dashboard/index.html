@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AI Fashion Discovery Engine</title>
+    <link rel="stylesheet" href="styles.css">
+    
+    <!-- PapaParse for CSV -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/PapaParse/5.4.1/papaparse.min.js"></script>
+    
+    <!-- Chart.js -->
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    
+    <!-- Lucide Icons -->
+    <script src="https://unpkg.com/lucide@latest"></script>
+</head>
+<body>
+    <div class="app-container">
+        <!-- Sidebar Navigation -->
+        <nav class="sidebar">
+            <div class="logo">
+                <i data-lucide="sparkles"></i>
+                <h2>Discovery Engine</h2>
+            </div>
+            
+            <div class="nav-group">
+                <h3>Executive</h3>
+                <a href="#overview" class="nav-item active" data-page="overview"><i data-lucide="layout-dashboard"></i> Overview</a>
+                <a href="#methodology" class="nav-item" data-page="methodology"><i data-lucide="git-merge"></i> Methodology</a>
+            </div>
+            
+            <div class="nav-group">
+                <h3>Behavioral Insights</h3>
+                <a href="#wishlist" class="nav-item" data-page="wishlist"><i data-lucide="heart"></i> Why Users Wishlist</a>
+                <a href="#barriers" class="nav-item" data-page="barriers"><i data-lucide="shield-alert"></i> Purchase Barriers</a>
+                <a href="#uncertainty" class="nav-item" data-page="uncertainty"><i data-lucide="help-circle"></i> Remaining Uncertainty</a>
+                <a href="#external" class="nav-item" data-page="external"><i data-lucide="globe"></i> External Research</a>
+                <a href="#segments" class="nav-item" data-page="segments"><i data-lucide="users"></i> Shopper Segments</a>
+                <a href="#journeys" class="nav-item" data-page="journeys"><i data-lucide="route"></i> Behavioral Journeys</a>
+                <a href="#needs" class="nav-item" data-page="needs"><i data-lucide="target"></i> Unmet Needs</a>
+            </div>
+            
+            <div class="nav-group">
+                <h3>Strategic Opportunities</h3>
+                <a href="#prioritization" class="nav-item" data-page="prioritization"><i data-lucide="list-ordered"></i> Prioritization</a>
+                <a href="#opportunity-detail" class="nav-item" data-page="opportunity-detail"><i data-lucide="zoom-in"></i> Opportunity Detail</a>
+            </div>
+            
+            <div class="nav-group">
+                <h3>Solutions & Experiments</h3>
+                <a href="#recommended" class="nav-item" data-page="recommended"><i data-lucide="star"></i> Recommended Concept</a>
+                <a href="#comparison" class="nav-item" data-page="comparison"><i data-lucide="git-compare"></i> Solution Comparison</a>
+                <a href="#experiment" class="nav-item" data-page="experiment"><i data-lucide="flask-conical"></i> Experiment Design</a>
+                <a href="#risks" class="nav-item" data-page="risks"><i data-lucide="alert-triangle"></i> Risks & Limitations</a>
+            </div>
+            
+            <div class="nav-group">
+                <h3>Raw Data</h3>
+                <a href="#evidence" class="nav-item" data-page="evidence"><i data-lucide="database"></i> Evidence Explorer</a>
+            </div>
+        </nav>
+
+        <!-- Main Content Area -->
+        <main class="content-area">
+            <header class="topbar">
+                <h1 id="page-title">Loading...</h1>
+                <div class="metric-badge">
+                    <span class="metric-label">Primary Metric:</span>
+                    <span class="metric-value">30-Day Wishlist-to-Purchase Conv. Rate</span>
+                </div>
+            </header>
+            
+            <div id="page-content" class="page-container">
+                <div class="loader">
+                    <i data-lucide="loader-2" class="spin"></i>
+                    <p>Loading AI Discovery Data...</p>
+                </div>
+            </div>
+        </main>
+    </div>
+
+    <!-- Application Logic -->
+    <script src="app.js"></script>
+</body>
+</html>

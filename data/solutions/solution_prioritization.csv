@@ -1,0 +1,3 @@
+rank,solution_name,opportunity_addressed,user_impact_score,expected_metric_impact_score,evidence_strength_score,reach_score,implementation_effort_score,time_to_learn_score,risk_score,overall_priority_score,ai_classification
+1,Verified Buyer Photo Highlight,Platform & Brand Trust,3,3,4,5,1,1,1,83,AI_not_needed - UI reordering.
+2,AI Quality Extraction Summary,Platform & Brand Trust,4,4,4,4,4,4,2,68,AI_required - Requires NLP to extract specific semantic themes (quality) from messy reviews.

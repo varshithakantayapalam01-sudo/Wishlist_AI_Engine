@@ -1,0 +1,390 @@
+[
+  {
+    "name": "delivery_confidence",
+    "supporting_conversations": 1430,
+    "associated_barriers": [
+      [
+        "delivery",
+        995
+      ],
+      [
+        "no_clear_barrier",
+        219
+      ],
+      [
+        "trust",
+        62
+      ]
+    ],
+    "affected_segments": [
+      [
+        "convenience_focused_shopper",
+        932
+      ],
+      [
+        "high_intent_decider",
+        176
+      ],
+      [
+        "uncertain_or_mixed",
+        169
+      ]
+    ]
+  },
+  {
+    "name": "return_confidence",
+    "supporting_conversations": 928,
+    "associated_barriers": [
+      [
+        "returns",
+        632
+      ],
+      [
+        "no_clear_barrier",
+        125
+      ],
+      [
+        "delivery",
+        49
+      ]
+    ],
+    "affected_segments": [
+      [
+        "convenience_focused_shopper",
+        626
+      ],
+      [
+        "uncertain_or_mixed",
+        103
+      ],
+      [
+        "high_intent_decider",
+        88
+      ]
+    ]
+  },
+  {
+    "name": "quality_confidence",
+    "supporting_conversations": 388,
+    "associated_barriers": [
+      [
+        "product_quality",
+        203
+      ],
+      [
+        "no_clear_barrier",
+        83
+      ],
+      [
+        "price",
+        22
+      ]
+    ],
+    "affected_segments": [
+      [
+        "review_dependent_shopper",
+        238
+      ],
+      [
+        "uncertain_or_mixed",
+        52
+      ],
+      [
+        "convenience_focused_shopper",
+        30
+      ]
+    ]
+  },
+  {
+    "name": "trust",
+    "supporting_conversations": 306,
+    "associated_barriers": [
+      [
+        "trust",
+        299
+      ],
+      [
+        "brand_uncertainty",
+        3
+      ],
+      [
+        "product_quality",
+        2
+      ]
+    ],
+    "affected_segments": [
+      [
+        "review_dependent_shopper",
+        255
+      ],
+      [
+        "uncertain_or_mixed",
+        30
+      ],
+      [
+        "high_intent_decider",
+        18
+      ]
+    ]
+  },
+  {
+    "name": "size_guidance",
+    "supporting_conversations": 145,
+    "associated_barriers": [
+      [
+        "sizing",
+        123
+      ],
+      [
+        "no_clear_barrier",
+        7
+      ],
+      [
+        "returns",
+        4
+      ]
+    ],
+    "affected_segments": [
+      [
+        "fit_sensitive_shopper",
+        117
+      ],
+      [
+        "uncertain_or_mixed",
+        14
+      ],
+      [
+        "convenience_focused_shopper",
+        6
+      ]
+    ]
+  },
+  {
+    "name": "price_confidence",
+    "supporting_conversations": 129,
+    "associated_barriers": [
+      [
+        "price",
+        95
+      ],
+      [
+        "waiting_for_discount",
+        13
+      ],
+      [
+        "no_clear_barrier",
+        12
+      ]
+    ],
+    "affected_segments": [
+      [
+        "deal_seeker",
+        95
+      ],
+      [
+        "uncertain_or_mixed",
+        16
+      ],
+      [
+        "inspiration_browser",
+        5
+      ]
+    ]
+  },
+  {
+    "name": "stock_visibility",
+    "supporting_conversations": 114,
+    "associated_barriers": [
+      [
+        "stock_availability",
+        114
+      ]
+    ],
+    "affected_segments": [
+      [
+        "high_intent_decider",
+        90
+      ],
+      [
+        "uncertain_or_mixed",
+        21
+      ],
+      [
+        "comparison_shopper",
+        3
+      ]
+    ]
+  },
+  {
+    "name": "social_validation",
+    "supporting_conversations": 100,
+    "associated_barriers": [
+      [
+        "social_validation",
+        100
+      ]
+    ],
+    "affected_segments": [
+      [
+        "social_validation_shopper",
+        84
+      ],
+      [
+        "uncertain_or_mixed",
+        9
+      ],
+      [
+        "high_intent_decider",
+        4
+      ]
+    ]
+  },
+  {
+    "name": "fit_confidence",
+    "supporting_conversations": 41,
+    "associated_barriers": [
+      [
+        "fit",
+        37
+      ],
+      [
+        "trust",
+        1
+      ],
+      [
+        "delivery",
+        1
+      ]
+    ],
+    "affected_segments": [
+      [
+        "fit_sensitive_shopper",
+        36
+      ],
+      [
+        "high_intent_decider",
+        2
+      ],
+      [
+        "review_dependent_shopper",
+        1
+      ]
+    ]
+  },
+  {
+    "name": "review_confidence",
+    "supporting_conversations": 29,
+    "associated_barriers": [
+      [
+        "review_uncertainty",
+        6
+      ],
+      [
+        "no_clear_barrier",
+        6
+      ],
+      [
+        "returns",
+        5
+      ]
+    ],
+    "affected_segments": [
+      [
+        "review_dependent_shopper",
+        15
+      ],
+      [
+        "convenience_focused_shopper",
+        7
+      ],
+      [
+        "uncertain_or_mixed",
+        3
+      ]
+    ]
+  },
+  {
+    "name": "easier_comparison",
+    "supporting_conversations": 29,
+    "associated_barriers": [
+      [
+        "no_clear_barrier",
+        12
+      ],
+      [
+        "price",
+        4
+      ],
+      [
+        "trust",
+        3
+      ]
+    ],
+    "affected_segments": [
+      [
+        "comparison_shopper",
+        9
+      ],
+      [
+        "convenience_focused_shopper",
+        5
+      ],
+      [
+        "review_dependent_shopper",
+        4
+      ]
+    ]
+  },
+  {
+    "name": "styling_guidance",
+    "supporting_conversations": 8,
+    "associated_barriers": [
+      [
+        "styling_uncertainty",
+        8
+      ]
+    ],
+    "affected_segments": [
+      [
+        "occasion_shopper",
+        8
+      ]
+    ]
+  },
+  {
+    "name": "decision_support",
+    "supporting_conversations": 2,
+    "associated_barriers": [
+      [
+        "insufficient_information",
+        2
+      ]
+    ],
+    "affected_segments": [
+      [
+        "high_intent_decider",
+        1
+      ],
+      [
+        "comparison_shopper",
+        1
+      ]
+    ]
+  },
+  {
+    "name": "occasion_guidance",
+    "supporting_conversations": 1,
+    "associated_barriers": [
+      [
+        "occasion_suitability",
+        1
+      ]
+    ],
+    "affected_segments": [
+      [
+        "occasion_shopper",
+        1
+      ]
+    ]
+  }
+]

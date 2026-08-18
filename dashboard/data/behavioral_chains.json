@@ -1,0 +1,14 @@
+[
+  {
+    "chain_description": "waiting_for_stock -> stock_availability -> no_delay_detected",
+    "conversation_count": 111
+  },
+  {
+    "chain_description": "purchase_later -> delivery -> no_delay_detected",
+    "conversation_count": 64
+  },
+  {
+    "chain_description": "purchase_later -> returns -> no_delay_detected",
+    "conversation_count": 44
+  }
+]

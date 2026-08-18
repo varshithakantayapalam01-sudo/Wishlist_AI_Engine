@@ -1,0 +1,10 @@
+rank,opportunity_name,problem_statement,conversation_count,dataset_percentage,frequency_score,purchase_impact_score,high_intent_relevance_score,evidence_confidence_score,segment_breadth_score,external_leakage_score,overall_opportunity_score,evidence_strength
+1,Delivery & Returns Confidence,Users block purchases out of fear that delivery will be late or returns will be difficult/rejected.,2489,50.52,5.0,3.48,4.12,4.41,5.0,1.64,83.72,strong
+2,Stock Availability Visibility,"Users face friction when items or specific sizes are out of stock, with no visibility on restocks.",188,3.82,1.3,3.85,4.74,4.51,4.5,1.74,69.02,strong
+3,Platform & Brand Trust,"Users abandon purchases due to lack of trust in the platform, third-party seller, or unfamiliar brand.",420,8.52,1.67,3.99,4.25,4.37,4.0,1.72,68.12,strong
+4,Fit & Sizing Confidence,Users frequently postpone purchases because they lack confidence in whether the item will fit them or which size to choose.,265,5.38,1.43,3.02,4.29,4.48,5.0,1.72,64.58,strong
+5,Review & Quality Trust,Users hesitate because they cannot trust the product reviews or are uncertain about the actual quality.,504,10.23,1.81,2.71,3.72,4.4,5.0,1.83,62.53,strong
+6,Price & Value Clarity,Users delay buying because they are uncertain if the current price represents good value or if it will drop soon.,196,3.98,1.31,2.86,3.67,4.36,5.0,1.84,60.51,strong
+7,Decision & Comparison Support,Users are overwhelmed by choices and struggle to compare shortlisted items to make a final decision.,39,0.79,1.06,2.44,3.77,4.39,4.5,2.33,57.08,directional
+8,Social Validation Support,"Users delay purchases to seek opinions and validation from friends, family, or social media.",151,3.06,1.24,2.09,3.7,4.29,3.0,1.95,52.3,strong
+9,Styling & Occasion Guidance,Users hesitate because they don't know how to style the item or if it's appropriate for their specific occasion.,10,0.2,1.02,2.0,3.8,2.09,1.5,1.8,41.35,weak

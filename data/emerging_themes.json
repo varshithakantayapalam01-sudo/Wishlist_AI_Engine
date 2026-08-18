@@ -1,0 +1,278 @@
+[
+  {
+    "theme_name": "Order / Delivery / Cancelled",
+    "keywords": [
+      "order",
+      "delivery",
+      "cancelled",
+      "days",
+      "cancel",
+      "time",
+      "app",
+      "delivered"
+    ],
+    "conversation_count": 609,
+    "percentage_of_dataset": 12.36,
+    "main_purchase_barrier": "delivery",
+    "likely_user_need": "delivery_confidence",
+    "average_confidence": 0.826,
+    "representative_snippets": [
+      "The estimated delivery date was Dec 14 and till today which is Dec 15, the order has not been delivered yet",
+      "The order came to me as cash on delivery and i returned it",
+      "After giving so much complaints they can't able to deliver my order after waiting some days I have to cancel my order due to poor service"
+    ]
+  },
+  {
+    "theme_name": "Return / Product / Request",
+    "keywords": [
+      "return",
+      "product",
+      "request",
+      "return request",
+      "pickup",
+      "app",
+      "pick",
+      "return product"
+    ],
+    "conversation_count": 581,
+    "percentage_of_dataset": 11.79,
+    "main_purchase_barrier": "no_clear_barrier",
+    "likely_user_need": "return_confidence",
+    "average_confidence": 0.821,
+    "representative_snippets": [
+      "You have to call Delivery courier for return, they know nothing about the order or product",
+      "I bought an AC and there are some requirements which was not written/mentioned in their portal, I didn't even opened the box, technician asked me to return the product and within a day I raised the re",
+      "I ordered jeans but the quality of the jeans is very bad which does not fit me"
+    ]
+  },
+  {
+    "theme_name": "App / Items / Stock",
+    "keywords": [
+      "app",
+      "items",
+      "stock",
+      "cart",
+      "item",
+      "like",
+      "order",
+      "just"
+    ],
+    "conversation_count": 566,
+    "percentage_of_dataset": 11.49,
+    "main_purchase_barrier": "no_clear_barrier",
+    "likely_user_need": "no_clear_need",
+    "average_confidence": 0.765,
+    "representative_snippets": [
+      "They have smart customer service who is telling to place a fresh order since the sale has got over and all the prices have been rised up and they could make more profit",
+      "If we reject any order during delivery there will be too many annoying calls asking the reason in busy hours",
+      "On the purchase page, I was happy to see 2-4 days delivery time and ordered a phone"
+    ]
+  },
+  {
+    "theme_name": "Good / Quality / Products",
+    "keywords": [
+      "good",
+      "quality",
+      "products",
+      "app",
+      "shopping",
+      "great",
+      "price",
+      "myntra"
+    ],
+    "conversation_count": 476,
+    "percentage_of_dataset": 9.66,
+    "main_purchase_barrier": "no_clear_barrier",
+    "likely_user_need": "quality_confidence",
+    "average_confidence": 0.777,
+    "representative_snippets": [
+      "The products are awesome taking the quality and prices in consideration",
+      "So what my suggestion is don't go for combo products (those products will be cheap and the quality will also be low for that price)",
+      "very gud quality dresses , return payment process also very easy and quick,most beautiful dresses,nice collection for both adult and kids,more options, designes most recommended app ,very useful easy "
+    ]
+  },
+  {
+    "theme_name": "Support / Customer Support / Customer",
+    "keywords": [
+      "support",
+      "customer support",
+      "customer",
+      "service",
+      "return",
+      "experience",
+      "disappointing",
+      "issue"
+    ],
+    "conversation_count": 409,
+    "percentage_of_dataset": 8.3,
+    "main_purchase_barrier": "returns",
+    "likely_user_need": "return_confidence",
+    "average_confidence": 0.803,
+    "representative_snippets": [
+      "This was the first time when I was shopping with this website and I was really very impressed by the interesting range of products that they provided so I ordered the same",
+      "They delivered a completely wrong item and i requested a return on the same day",
+      "Myntra should improve its delivery, return and customer support system and provide proper solutions"
+    ]
+  },
+  {
+    "theme_name": "Refund / Money / Returned",
+    "keywords": [
+      "refund",
+      "money",
+      "returned",
+      "received",
+      "product",
+      "app",
+      "return",
+      "account"
+    ],
+    "conversation_count": 409,
+    "percentage_of_dataset": 8.3,
+    "main_purchase_barrier": "returns",
+    "likely_user_need": "return_confidence",
+    "average_confidence": 0.801,
+    "representative_snippets": [
+      "In my last two orders, they failed to update the delivery status for nearly 20 days and kept sending me \"Delivering Today\" messages every day",
+      "Other shopping apps manage to process cancellations and issue refunds almost instantly—sometimes within two minutes",
+      "I ordered a dress but returned it due to a fitting issue"
+    ]
+  },
+  {
+    "theme_name": "Care / Customer Care / Customer",
+    "keywords": [
+      "care",
+      "customer care",
+      "customer",
+      "order",
+      "app",
+      "worst",
+      "number",
+      "product"
+    ],
+    "conversation_count": 408,
+    "percentage_of_dataset": 8.28,
+    "main_purchase_barrier": "no_clear_barrier",
+    "likely_user_need": "delivery_confidence",
+    "average_confidence": 0.791,
+    "representative_snippets": [
+      "And after couple of days I realise that the T-Shirts are picked up for return",
+      "If you are lucky then you might get refund but of less amount than you paid for it",
+      "Customer care made the excuse that the item was damaged and asked for 7 days for refund"
+    ]
+  },
+  {
+    "theme_name": "Delivery / Date / Delivery Date",
+    "keywords": [
+      "delivery",
+      "date",
+      "delivery date",
+      "order",
+      "service",
+      "delivered",
+      "experience",
+      "nykaa"
+    ],
+    "conversation_count": 394,
+    "percentage_of_dataset": 8.0,
+    "main_purchase_barrier": "delivery",
+    "likely_user_need": "delivery_confidence",
+    "average_confidence": 0.865,
+    "representative_snippets": [
+      "The biggest problem is that wrong information is repeatedly given by the delivery partners and there is no proper coordination",
+      "I ordered five items, and the app showed they would be delivered today, but I didn't even receive a single call from the delivery agent",
+      "They will show one date while ordering but then they will modify the date once the delivery date is nearby"
+    ]
+  },
+  {
+    "theme_name": "Worst / App / Worst App",
+    "keywords": [
+      "worst",
+      "app",
+      "worst app",
+      "don",
+      "product",
+      "shopping",
+      "shopping app",
+      "ordered"
+    ],
+    "conversation_count": 384,
+    "percentage_of_dataset": 7.79,
+    "main_purchase_barrier": "no_clear_barrier",
+    "likely_user_need": "delivery_confidence",
+    "average_confidence": 0.78,
+    "representative_snippets": [
+      "Please don't buy products from this app , the quality is cheap and expensive too",
+      "And price is also more as compare to other online shopping comp",
+      "1st they don't have a customer review system to see and buy"
+    ]
+  },
+  {
+    "theme_name": "Product / Wrong / Exchange",
+    "keywords": [
+      "product",
+      "wrong",
+      "exchange",
+      "wrong product",
+      "size",
+      "return",
+      "different",
+      "ordered"
+    ],
+    "conversation_count": 358,
+    "percentage_of_dataset": 7.27,
+    "main_purchase_barrier": "delivery",
+    "likely_user_need": "return_confidence",
+    "average_confidence": 0.827,
+    "representative_snippets": [
+      "myntra refund only one product price in exchange of wrong product",
+      "When I requested a return, two customer care executives, Nitish and Lokesh, refused to help and insisted that the correct products had been delivered",
+      "photo shown on the app was different from the real product and on return the delivery partner did not accept my return and after that the customer care executive did not receive the call no response f"
+    ]
+  },
+  {
+    "theme_name": "Shopping / Easy / Great",
+    "keywords": [
+      "shopping",
+      "easy",
+      "great",
+      "myntra",
+      "easy use",
+      "shopping experience",
+      "app easy",
+      "app easy use"
+    ],
+    "conversation_count": 186,
+    "percentage_of_dataset": 3.78,
+    "main_purchase_barrier": "no_clear_barrier",
+    "likely_user_need": "no_clear_need",
+    "average_confidence": 0.788,
+    "representative_snippets": [
+      "My orders have always been delivered on time, and the product quality has matched the descriptions",
+      "The user interface is very smooth, delivery is always on time, and returns are completely hassle-free",
+      "I love the \"Size Finder\" tool because it actually helps reduce returns by suggesting the correct fit based on height and weight"
+    ]
+  },
+  {
+    "theme_name": "Cut / Price / Cut Price",
+    "keywords": [
+      "cut",
+      "price",
+      "cut price",
+      "game",
+      "app",
+      "product",
+      "order",
+      "people"
+    ],
+    "conversation_count": 147,
+    "percentage_of_dataset": 2.98,
+    "main_purchase_barrier": "trust",
+    "likely_user_need": "trust",
+    "average_confidence": 0.833,
+    "representative_snippets": [
+      "All this is fraud you don't get them they say your order is tracking and you will get soon all that is illusion i have wasted a lots of time in sharing friends ,tracking my order and calling customer ",
+      "I waited for more than 2 weeks ,( even after the expected delivery date),now they are saying that the order could not be delivered",
+      "I have ordered the top and participated on the cut the price offer just because I wanted to check out the quality of the product which I get and was about to review the product in my blog"
+    ]
+  }
+]

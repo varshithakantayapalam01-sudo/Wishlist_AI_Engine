@@ -1,0 +1,30 @@
+[
+  {
+    "solution_name": "Verified Buyer Photo Highlight",
+    "opportunity_addressed": "Platform & Brand Trust",
+    "user_problem": "When shoppers shortlist an item, they often abandon the purchase because they cannot trust the product quality or suspect reviews are fake (supported by 420 conversations).",
+    "jtbd": "When I am ready to buy an unknown brand, I want to quickly verify its quality through authentic reviews, so I don't waste money on a poor product.",
+    "target_segment": "Users scrolling to reviews",
+    "concept_description": "Surfaces user-uploaded photos to the top of the wishlist item page.",
+    "how_it_works": "UI change to prioritize media over text reviews.",
+    "behavior_change_expected": "Provides immediate visual proof of actual product quality.",
+    "why_it_may_improve_wishlist_conversion": "Resolves the 'is quality good' uncertainty visually.",
+    "evidence_support": "Supported by high incidence in discovery data for Platform & Brand Trust.",
+    "implementation_complexity": 1,
+    "ai_classification": "AI_not_needed - UI reordering."
+  },
+  {
+    "solution_name": "AI Quality Extraction Summary",
+    "opportunity_addressed": "Platform & Brand Trust",
+    "user_problem": "When shoppers shortlist an item, they often abandon the purchase because they cannot trust the product quality or suspect reviews are fake (supported by 420 conversations).",
+    "jtbd": "When I am ready to buy an unknown brand, I want to quickly verify its quality through authentic reviews, so I don't waste money on a poor product.",
+    "target_segment": "Users viewing items with >50 reviews",
+    "concept_description": "An AI-generated summary explicitly focused on fabric, stitching, and durability.",
+    "how_it_works": "LLM extracts only quality-related sentiments from reviews and synthesizes them into a 2-sentence summary.",
+    "behavior_change_expected": "Saves the user from reading dozens of reviews to find quality indicators.",
+    "why_it_may_improve_wishlist_conversion": "Directly answers the 'is the quality good' friction point instantly.",
+    "evidence_support": "Supported by high incidence in discovery data for Platform & Brand Trust.",
+    "implementation_complexity": 4,
+    "ai_classification": "AI_required - Requires NLP to extract specific semantic themes (quality) from messy reviews."
+  }
+]

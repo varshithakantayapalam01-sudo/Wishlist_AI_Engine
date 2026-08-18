@@ -1,0 +1,18 @@
+{
+  "High Evidence / High Potential": [
+    "Delivery & Returns Confidence"
+  ],
+  "High Potential / Emerging Evidence": [],
+  "High Evidence / Lower Conversion Impact": [
+    "Stock Availability Visibility",
+    "Platform & Brand Trust",
+    "Fit & Sizing Confidence",
+    "Review & Quality Trust",
+    "Price & Value Clarity",
+    "Social Validation Support"
+  ],
+  "Low Priority": [
+    "Decision & Comparison Support",
+    "Styling & Occasion Guidance"
+  ]
+}

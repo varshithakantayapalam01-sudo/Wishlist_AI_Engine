@@ -1,0 +1,209 @@
+{
+  "total_high_intent_records": 3745,
+  "top_barriers": [
+    [
+      "no_clear_barrier",
+      1244
+    ],
+    [
+      "delivery",
+      884
+    ],
+    [
+      "returns",
+      505
+    ],
+    [
+      "trust",
+      335
+    ],
+    [
+      "product_quality",
+      193
+    ],
+    [
+      "sizing",
+      146
+    ],
+    [
+      "stock_availability",
+      132
+    ],
+    [
+      "social_validation",
+      102
+    ],
+    [
+      "price",
+      95
+    ],
+    [
+      "fit",
+      51
+    ]
+  ],
+  "top_uncertainties": [
+    [
+      "no_clear_uncertainty",
+      2253
+    ],
+    [
+      "will_it_arrive_on_time",
+      789
+    ],
+    [
+      "can_i_return_it",
+      441
+    ],
+    [
+      "is_quality_good",
+      173
+    ],
+    [
+      "other",
+      86
+    ],
+    [
+      "will_it_be_available_later",
+      54
+    ],
+    [
+      "which_size_should_i_buy",
+      43
+    ],
+    [
+      "which_product_is_better",
+      25
+    ],
+    [
+      "is_it_worth_the_price",
+      22
+    ],
+    [
+      "can_i_trust_reviews",
+      18
+    ]
+  ],
+  "top_delay_reasons": [
+    [
+      "no_delay_detected",
+      3663
+    ],
+    [
+      "unsure_about_value",
+      29
+    ],
+    [
+      "waiting_for_size",
+      11
+    ],
+    [
+      "seeking_validation",
+      9
+    ],
+    [
+      "waiting_for_stock",
+      8
+    ],
+    [
+      "waiting_for_sale",
+      6
+    ],
+    [
+      "waiting_for_reviews",
+      5
+    ],
+    [
+      "comparing_options",
+      5
+    ],
+    [
+      "unsure_about_quality",
+      5
+    ],
+    [
+      "waiting_for_occasion",
+      2
+    ]
+  ],
+  "top_unmet_needs": [
+    [
+      "delivery_confidence",
+      1173
+    ],
+    [
+      "no_clear_need",
+      933
+    ],
+    [
+      "return_confidence",
+      675
+    ],
+    [
+      "quality_confidence",
+      256
+    ],
+    [
+      "trust",
+      246
+    ],
+    [
+      "size_guidance",
+      120
+    ],
+    [
+      "stock_visibility",
+      111
+    ],
+    [
+      "price_confidence",
+      83
+    ],
+    [
+      "social_validation",
+      67
+    ],
+    [
+      "fit_confidence",
+      33
+    ]
+  ],
+  "opportunity_ranking_for_high_intent": [
+    {
+      "opportunity": "Delivery & Returns Confidence",
+      "high_intent_conversation_count": 1942
+    },
+    {
+      "opportunity": "Review & Quality Trust",
+      "high_intent_conversation_count": 343
+    },
+    {
+      "opportunity": "Platform & Brand Trust",
+      "high_intent_conversation_count": 341
+    },
+    {
+      "opportunity": "Fit & Sizing Confidence",
+      "high_intent_conversation_count": 218
+    },
+    {
+      "opportunity": "Stock Availability Visibility",
+      "high_intent_conversation_count": 176
+    },
+    {
+      "opportunity": "Price & Value Clarity",
+      "high_intent_conversation_count": 131
+    },
+    {
+      "opportunity": "Social Validation Support",
+      "high_intent_conversation_count": 102
+    },
+    {
+      "opportunity": "Decision & Comparison Support",
+      "high_intent_conversation_count": 27
+    },
+    {
+      "opportunity": "Styling & Occasion Guidance",
+      "high_intent_conversation_count": 7
+    }
+  ]
+}

@@ -1,0 +1,111 @@
+{
+  "pipeline_metadata": {
+    "pipeline_version": "1.0.0",
+    "start_time": "2026-08-18T18:15:20.178356+00:00",
+    "end_time": "2026-08-18T18:19:26.522253+00:00",
+    "duration_seconds": 246.343897
+  },
+  "record_counts": {
+    "total_raw_records": 8221,
+    "total_clean_records": 4927,
+    "duplicate_removal_rate": 48,
+    "percentage_relevant": 59.93
+  },
+  "source_distribution": {
+    "raw": {
+      "Google Play Store": 8221
+    },
+    "clean": {
+      "Google Play Store": 4927
+    }
+  },
+  "quality_metrics": {
+    "average_relevance_score": 0.8404,
+    "min_relevance_score": 0.65,
+    "max_relevance_score": 1.0,
+    "relevance_threshold": 0.65,
+    "percentage_with_valid_urls": 100.0
+  },
+  "date_range": {
+    "earliest": "2018-09-13T22:11:38+00:00",
+    "latest": "2026-08-17T23:27:46+00:00"
+  },
+  "language_stats": {
+    "total_processed": 7760,
+    "total_english": 7511,
+    "total_translated": 35,
+    "translation_errors": 0,
+    "language_distribution": {
+      "en": 7511,
+      "tl": 9,
+      "da": 19,
+      "no": 18,
+      "es": 5,
+      "it": 13,
+      "af": 15,
+      "id": 50,
+      "cs": 4,
+      "sw": 8,
+      "sl": 2,
+      "hi": 21,
+      "fr": 17,
+      "et": 11,
+      "de": 11,
+      "nl": 7,
+      "ca": 13,
+      "ro": 6,
+      "vi": 1,
+      "so": 6,
+      "sk": 1,
+      "sq": 2,
+      "pt": 1,
+      "tr": 2,
+      "cy": 1,
+      "hr": 3,
+      "sv": 1,
+      "bn": 1,
+      "pl": 1
+    },
+    "percentage_translated": 0.45
+  },
+  "cleaning_stats": {
+    "total_input": 8221,
+    "removed_too_short": 357,
+    "removed_spam": 55,
+    "removed_generic": 1,
+    "removed_exact_duplicates": 13,
+    "removed_near_duplicates": 35,
+    "removed_pii_stripped": 0,
+    "total_removed": 461
+  },
+  "collector_statuses": [
+    {
+      "source": "Google Play Store",
+      "available": true,
+      "records_collected": 8221,
+      "errors": 0,
+      "skipped_queries": 0
+    },
+    {
+      "source": "YouTube",
+      "available": false,
+      "records_collected": 0,
+      "errors": 0,
+      "skipped_queries": 0
+    },
+    {
+      "source": "Reddit",
+      "available": false,
+      "records_collected": 0,
+      "errors": 0,
+      "skipped_queries": 0
+    },
+    {
+      "source": "Web",
+      "available": true,
+      "records_collected": 0,
+      "errors": 0,
+      "skipped_queries": 0
+    }
+  ]
+}

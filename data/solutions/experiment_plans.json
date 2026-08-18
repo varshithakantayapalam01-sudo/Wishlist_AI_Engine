@@ -1,0 +1,54 @@
+[
+  {
+    "experiment_name": "EXP: Verified Buyer Photo Highlight",
+    "opportunity": "Platform & Brand Trust",
+    "hypothesis": "If we provide users scrolling to reviews with a verified buyer photo highlight, then they will provides immediate visual proof of actual product quality., because resolves the 'is quality good' uncertainty visually., resulting in an increase in 30-Day Wishlist-to-Purchase User Conversion Rate.",
+    "target_population": "Users scrolling to reviews",
+    "control": "Current experience (no intervention).",
+    "treatment": "Surfaces user-uploaded photos to the top of the wishlist item page.",
+    "primary_metric": "30-Day Wishlist-to-Purchase User Conversion Rate (Numerator: users who purchase >=1 wishlisted item in 30d. Denominator: users who add >=1 item to wishlist).",
+    "secondary_metrics": [
+      "Time from wishlist to purchase",
+      "Add-to-cart from wishlist rate"
+    ],
+    "guardrail_metrics": [
+      "Return rate (ensure we aren't driving bad purchases)",
+      "Notification opt-outs (if applicable)",
+      "Wishlist abandonment rate"
+    ],
+    "expected_direction": "Increase in primary metric. No significant increase in return rate.",
+    "experiment_duration": "14 days (subject to traffic/power calculations)",
+    "decision_criteria": {
+      "ship": "Statistically significant increase in primary metric AND neutral/positive guardrails.",
+      "iterate": "Trending positive primary metric BUT negative impact on return rates.",
+      "stop": "Flat or negative primary metric."
+    },
+    "timing_strategy": "Triggered when user revisits the wishlist or dwells on the Product Detail Page of a wishlisted item. Timing matters to catch them in the decision phase, not the initial bookmarking phase."
+  },
+  {
+    "experiment_name": "EXP: AI Quality Extraction Summary",
+    "opportunity": "Platform & Brand Trust",
+    "hypothesis": "If we provide users viewing items with >50 reviews with a ai quality extraction summary, then they will saves the user from reading dozens of reviews to find quality indicators., because directly answers the 'is the quality good' friction point instantly., resulting in an increase in 30-Day Wishlist-to-Purchase User Conversion Rate.",
+    "target_population": "Users viewing items with >50 reviews",
+    "control": "Current experience (no intervention).",
+    "treatment": "An AI-generated summary explicitly focused on fabric, stitching, and durability.",
+    "primary_metric": "30-Day Wishlist-to-Purchase User Conversion Rate (Numerator: users who purchase >=1 wishlisted item in 30d. Denominator: users who add >=1 item to wishlist).",
+    "secondary_metrics": [
+      "Time from wishlist to purchase",
+      "Add-to-cart from wishlist rate"
+    ],
+    "guardrail_metrics": [
+      "Return rate (ensure we aren't driving bad purchases)",
+      "Notification opt-outs (if applicable)",
+      "Wishlist abandonment rate"
+    ],
+    "expected_direction": "Increase in primary metric. No significant increase in return rate.",
+    "experiment_duration": "14 days (subject to traffic/power calculations)",
+    "decision_criteria": {
+      "ship": "Statistically significant increase in primary metric AND neutral/positive guardrails.",
+      "iterate": "Trending positive primary metric BUT negative impact on return rates.",
+      "stop": "Flat or negative primary metric."
+    },
+    "timing_strategy": "Triggered when user revisits the wishlist or dwells on the Product Detail Page of a wishlisted item. Timing matters to catch them in the decision phase, not the initial bookmarking phase."
+  }
+]
