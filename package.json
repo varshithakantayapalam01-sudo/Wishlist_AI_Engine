@@ -1,0 +1,8 @@
+{
+  "name": "wishlist-ai-engine-dashboard",
+  "version": "1.0.0",
+  "description": "Dashboard for AI Wishlist Discovery Engine",
+  "scripts": {
+    "build": "mkdir -p public && cp -r dashboard/* public/"
+  }
+}
